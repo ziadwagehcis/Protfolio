@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1A2D23"/>
+      <stop offset="100%" stop-color="#0C1110"/>
+    </radialGradient>
+    <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B6F36B"/>
+      <stop offset="100%" stop-color="#80B894"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="200" fill="url(#bgGlow)"/>
+  <circle cx="200" cy="155" r="60" fill="url(#mintGrad)" opacity="0.85"/>
+  <path d="M100 340 C100 240, 300 240, 300 340 Z" fill="url(#mintGrad)" opacity="0.75"/>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#B6F36B" stroke-width="2" stroke-opacity="0.2"/>
+  <text x="200" y="375" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="600" fill="#A1ADA4" text-anchor="middle">DEVELOPER</text>
+</svg>

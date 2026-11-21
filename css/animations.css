@@ -1,0 +1,250 @@
+/* ============================================================
+ *  ANIMATIONS — Premium Developer Portfolio
+ *  Keyframes · Scroll-reveal utilities · Reduced-motion
+ * ============================================================ */
+
+/* ============================================================
+ *  1. KEYFRAMES
+ * ============================================================ */
+
+/* ── Fade variants ─────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Scale ─────────────────────────────────────────────────── */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Slide (mobile menu) ───────────────────────────────────── */
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+/* ── Float (subtle up / down) ──────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* ── Pulse ─────────────────────────────────────────────────── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.6; transform: scale(1.15); }
+}
+
+/* ── Blink (cursor) ────────────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* ── Typing ────────────────────────────────────────────────── */
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* ── Rotate (glow ring / spinner) ──────────────────────────── */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── Progress fill ─────────────────────────────────────────── */
+@keyframes progressFill {
+  from { width: 0%; }
+  to   { width: var(--fill, 100%); }
+}
+
+/* ── Toast ─────────────────────────────────────────────────── */
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes toastOut {
+  from {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(40px) scale(0.95);
+  }
+}
+
+/* ── Shimmer (skeleton / loading) ──────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+/* ── Card hover glow ───────────────────────────────────────── */
+@keyframes cardGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(182, 243, 107, 0); }
+  50%      { box-shadow: 0 0 20px 2px rgba(182, 243, 107, 0.08); }
+}
+
+/* ── Bounce (subtle) ───────────────────────────────────────── */
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateY(0); }
+  40%      { transform: translateY(-6px); }
+  60%      { transform: translateY(-3px); }
+}
+
+/* ============================================================
+ *  2. SCROLL-REVEAL UTILITY CLASSES
+ * ============================================================ */
+
+.animate-on-scroll,
+[data-animation] {
+  opacity: 0;
+  transition:
+    opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+/* ── Direction variants (data-attribute driven) ────────────── */
+.animate-on-scroll[data-animation="fade-up"],
+[data-animation="fade-up"] {
+  transform: translateY(40px);
+}
+
+.animate-on-scroll[data-animation="fade-down"],
+[data-animation="fade-down"] {
+  transform: translateY(-40px);
+}
+
+.animate-on-scroll[data-animation="fade-left"],
+[data-animation="fade-left"] {
+  transform: translateX(-40px);
+}
+
+.animate-on-scroll[data-animation="fade-right"],
+[data-animation="fade-right"] {
+  transform: translateX(40px);
+}
+
+.animate-on-scroll[data-animation="scale-in"],
+[data-animation="scale-in"] {
+  transform: scale(0.88);
+}
+
+.animate-on-scroll[data-animation="fade-in"],
+[data-animation="fade-in"] {
+  /* opacity only — no translate */
+  transform: none;
+}
+
+/* ── Animated state (applied by JS on intersection) ────────── */
+.animate-on-scroll.animated,
+[data-animation].animated {
+  opacity: 1 !important;
+  transform: translateY(0) translateX(0) scale(1) !important;
+}
+
+/* ============================================================
+ *  3. STAGGER DELAYS
+ * ============================================================ */
+
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+.stagger-6 { transition-delay: 0.6s; }
+
+/* ============================================================
+ *  4. LOADER ANIMATION
+ * ============================================================ */
+
+.loader-overlay .loader-spinner {
+  animation: rotate 0.8s linear infinite;
+}
+
+.loader-overlay .loader-logo {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+}
+
+/* ============================================================
+ *  5. HOVER HELPERS
+ * ============================================================ */
+
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--shadow-color);
+}
+
+.hover-glow:hover {
+  animation: cardGlow 2s ease-in-out infinite;
+}
+
+/* ============================================================
+ *  6. REDUCED MOTION
+ * ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .animate-on-scroll[data-animation="fade-up"],
+  .animate-on-scroll[data-animation="fade-down"],
+  .animate-on-scroll[data-animation="fade-left"],
+  .animate-on-scroll[data-animation="fade-right"],
+  .animate-on-scroll[data-animation="scale-in"],
+  .animate-on-scroll[data-animation="fade-in"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .typing-cursor { animation: none !important; opacity: 1; }
+  .hero-image-decoration { animation: none !important; }
+  .scroll-indicator { animation: none !important; }
+  .loader-spinner { animation: none !important; }
+  .availability-dot { animation: none !important; }
+  .timeline-marker.marker-current { animation: none !important; }
+  .current-badge::before { animation: none !important; }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17211B"/>
+      <stop offset="100%" stop-color="#111A16"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B6F36B"/>
+      <stop offset="100%" stop-color="#80B894"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" rx="24" fill="url(#cardGrad)" stroke="rgba(182, 243, 107, 0.15)" stroke-width="2"/>
+  <!-- Code editor illustration -->
+  <rect x="50" y="50" width="400" height="400" rx="16" fill="#0C1110" stroke="rgba(182, 243, 107, 0.2)" stroke-width="1.5"/>
+  <circle cx="80" cy="80" r="6" fill="#EF4444"/>
+  <circle cx="102" cy="80" r="6" fill="#F59E0B"/>
+  <circle cx="124" cy="80" r="6" fill="#10B981"/>
+  <!-- Code lines -->
+  <rect x="80" y="120" width="120" height="10" rx="5" fill="#B6F36B" opacity="0.8"/>
+  <rect x="80" y="150" width="220" height="8" rx="4" fill="#80B894" opacity="0.5"/>
+  <rect x="110" y="175" width="160" height="8" rx="4" fill="#F3F6F0" opacity="0.4"/>
+  <rect x="110" y="200" width="240" height="8" rx="4" fill="#A1ADA4" opacity="0.4"/>
+  <rect x="140" y="225" width="180" height="8" rx="4" fill="#B6F36B" opacity="0.6"/>
+  <rect x="110" y="250" width="140" height="8" rx="4" fill="#80B894" opacity="0.5"/>
+  <rect x="80" y="280" width="80" height="8" rx="4" fill="#B6F36B" opacity="0.8"/>
+  <rect x="80" y="320" width="280" height="2" fill="url(#accentLine)" opacity="0.3"/>
+  <text x="250" y="380" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700" fill="#B6F36B" text-anchor="middle">&lt;CleanCode /&gt;</text>
+</svg>
