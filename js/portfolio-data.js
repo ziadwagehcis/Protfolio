@@ -163,6 +163,27 @@ const portfolioData = {
         technologies: ["JavaScript", "TypeScript", "Node.js", "Express.js", "MongoDB", "REST APIs", "Socket.IO", "Multer", "Mongoose"]
       },
       {
+        title: "Trainee",
+        company: "Route",
+        type: "Trainee",
+        startDate: "Feb 2026",
+        endDate: "Oct 2026",
+        current: false,
+        logo: "",
+        description: "Cairo, Egypt - Remote",
+        responsibilities: [
+          "Completed practical training in .NET Development at Route.",
+          "Studied C# fundamentals and advanced C# programming concepts.",
+          "Gained knowledge of Object-Oriented Programming (OOP) and SOLID principles.",
+          "Worked with databases and Entity Framework Core (EF Core).",
+          "Learned LINQ for querying and manipulating data.",
+          "Explored .NET fundamentals, ASP.NET MVC, and Web API development.",
+          "Studied software design patterns and their applications in software development."
+        ],
+        achievements: [],
+        technologies: ["C#", "OOP", "SOLID", "SQL", "Entity Framework Core", "LINQ", "ASP.NET MVC", "Web API"]
+      },
+      {
         title: "Account Manager",
         company: "Chroma Media School",
         type: "Part-time",
@@ -184,27 +205,6 @@ const portfolioData = {
         ],
         achievements: [],
         technologies: ["Account Management", "Digital Marketing", "Social Media", "Content Planning", "Campaign Management"]
-      },
-      {
-        title: "Trainee",
-        company: "Route",
-        type: "Trainee",
-        startDate: "Feb 2026",
-        endDate: "Oct 2026",
-        current: false,
-        logo: "",
-        description: "Cairo, Egypt - Remote",
-        responsibilities: [
-          "Completed practical training in .NET Development at Route.",
-          "Studied C# fundamentals and advanced C# programming concepts.",
-          "Gained knowledge of Object-Oriented Programming (OOP) and SOLID principles.",
-          "Worked with databases and Entity Framework Core (EF Core).",
-          "Learned LINQ for querying and manipulating data.",
-          "Explored .NET fundamentals, ASP.NET MVC, and Web API development.",
-          "Studied software design patterns and their applications in software development."
-        ],
-        achievements: [],
-        technologies: ["C#", "OOP", "SOLID", "SQL", "Entity Framework Core", "LINQ", "ASP.NET MVC", "Web API"]
       },
       {
         title: "Trainee",
