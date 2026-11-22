@@ -163,6 +163,29 @@ const portfolioData = {
         technologies: ["JavaScript", "TypeScript", "Node.js", "Express.js", "MongoDB", "REST APIs", "Socket.IO", "Multer", "Mongoose"]
       },
       {
+        title: "Account Manager",
+        company: "Chroma Media School",
+        type: "Part-time",
+        startDate: "Feb 2026",
+        endDate: "Aug 2026",
+        current: false,
+        logo: "",
+        description: "Mansoura, Egypt - On-site",
+        responsibilities: [
+          "Managed client accounts and maintained strong communication with clients.",
+          "Planned and executed marketing campaigns based on client requirements and goals.",
+          "Created social media content, including posts, captions, and promotional materials.",
+          "Designed social media posts, advertisements, and other marketing visuals.",
+          "Developed creative content ideas aligned with client brand identities.",
+          "Coordinated with the marketing and creative teams to ensure smooth campaign execution.",
+          "Followed up with clients on feedback and made necessary updates to materials.",
+          "Managed social media content schedules and timely content delivery.",
+          "Monitored campaign performance and contributed ideas for improving marketing results."
+        ],
+        achievements: [],
+        technologies: ["Account Management", "Digital Marketing", "Social Media", "Content Planning", "Campaign Management"]
+      },
+      {
         title: "Trainee",
         company: "Route",
         type: "Trainee",
@@ -337,34 +360,82 @@ const portfolioData = {
   projects: {
     enabled: true,
     // EDIT: Define project categories (auto-generated filter buttons)
-    categories: ["All Projects", "Web Development", "Full Stack", "Frontend", "Backend", "Mobile Applications"],
+    categories: ["All Projects", "Full Stack", "Frontend", "Backend", "Mobile Applications"],
     items: [
-      // EDIT: Add your real projects
-      // {
-      //   name: "Project Name",
-      //   shortDescription: "A brief one-line description of the project.",
-      //   category: "Full Stack",
-      //   featured: true,
-      //   thumbnail: "assets/images/projects/project1-thumb.jpg",
-      //   images: [
-      //     "assets/images/projects/project1-1.jpg",
-      //     "assets/images/projects/project1-2.jpg"
-      //   ],
-      //   technologies: ["Angular", "Node.js", "MongoDB", "Express.js"],
-      //   liveUrl: "https://example.com",              // Leave empty to hide button
-      //   githubUrl: "https://github.com/user/repo",   // Leave empty to hide button
-      //   details: {
-      //     overview: "Full project overview...",
-      //     objective: "What the project aims to achieve...",
-      //     problem: "The problem it solves...",
-      //     role: "My role in the project...",
-      //     features: ["Feature 1", "Feature 2", "Feature 3"],
-      //     implementation: "Technical details of how it was built...",
-      //     challenges: "Challenges faced during development...",
-      //     solutions: "How I overcame those challenges...",
-      //     results: "Outcomes and achievements..."
-      //   }
-      // }
+      {
+        name: "Northstar Shop",
+        shortDescription: "A modern e-commerce experience for discovering everyday products, managing favorites and carts, and tracking orders.",
+        category: "Full Stack",
+        featured: true,
+        thumbnail: "assets/images/projects/northstar-shop-home.png",
+        images: ["assets/images/projects/northstar-shop-home.png"],
+        technologies: ["Angular", "TypeScript", "Node.js", "Express.js", "MongoDB", "MEAN Stack"],
+        liveUrl: "https://northstar-shop1.vercel.app/",
+        githubUrl: "",
+        details: {
+          overview: "A full-stack online shop focused on a polished shopping experience, clear product presentation, and convenient order management.",
+          objective: "Make it easy for customers to discover products, manage a cart or favorites, and follow their orders.",
+          role: "Full-stack project built with the MEAN Stack.",
+          features: [
+            "Product catalog with category filters",
+            "Shopping cart and favorites",
+            "Order tracking",
+            "Manager portal",
+            "Light and dark themes",
+            "Multilingual interface"
+          ],
+          implementation: "Built with Angular and TypeScript on the frontend and Node.js, Express.js, and MongoDB on the backend."
+        }
+      },
+      {
+        name: "CineSphere",
+        shortDescription: "A movie discovery and catalog app with search, genre filters, ratings, and movie management.",
+        category: "Full Stack",
+        featured: true,
+        thumbnail: "assets/images/projects/cinesphere-home.png",
+        images: ["assets/images/projects/cinesphere-home.png"],
+        technologies: ["Angular", "TypeScript", "Node.js", "Express.js", "MongoDB", "REST APIs", "MEAN Stack"],
+        liveUrl: "https://cinecphere1.vercel.app/",
+        githubUrl: "",
+        details: {
+          overview: "A full-stack movie catalog for exploring titles, viewing movie details, and managing the catalog.",
+          objective: "Provide a searchable, organized movie discovery experience with useful catalog management tools.",
+          role: "Full-stack project built with the MEAN Stack.",
+          features: [
+            "Movie search across titles, actors, and directors",
+            "Browse movies by genre",
+            "Sort and explore top-rated or newest titles",
+            "Movie detail pages",
+            "Add and edit catalog entries",
+            "Live catalog API status"
+          ],
+          implementation: "Built with Angular and TypeScript on the frontend and Node.js, Express.js, and MongoDB on the backend, with REST API integration."
+        }
+      },
+      {
+        name: "Personal Portfolio",
+        shortDescription: "A responsive developer portfolio showcasing projects, skills, services, and professional experience.",
+        category: "Frontend",
+        featured: true,
+        thumbnail: "assets/images/projects/ziad-portfolio-home.png",
+        images: ["assets/images/projects/ziad-portfolio-home.png"],
+        technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+        liveUrl: "https://ziadwagehcis.github.io/Protfolio/",
+        githubUrl: "https://github.com/ziadwagehcis/Protofolio",
+        details: {
+          overview: "A responsive, data-driven personal portfolio with dedicated sections for background, skills, projects, and contact information.",
+          objective: "Present professional experience and selected work in a clear, accessible, and mobile-friendly format.",
+          role: "Designed and developed the portfolio.",
+          features: [
+            "Responsive layouts for desktop and mobile",
+            "Dynamic content rendered from a central data file",
+            "Dark and light themes",
+            "Project filters and project detail modals",
+            "Accessible navigation and SEO metadata"
+          ],
+          implementation: "Built with semantic HTML, custom CSS, and vanilla JavaScript."
+        }
+      }
     ]
   },
 
