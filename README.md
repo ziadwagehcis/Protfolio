@@ -314,7 +314,7 @@ Only links with a URL will appear in the social dock and footer. Leave any field
 2. Update the path in the data file:
 
 ```js
-cv: "assets/cv/resume.pdf",
+cv: "assets/cv/Ziad_Wagih_ATS_CV.pdf",
 ```
 
 The "Download CV" button in the navbar will automatically link to this file.
@@ -469,7 +469,7 @@ portfolio/
     │   ├── experience/         # Company logos (optional)
     │   └── general/            # OG image, misc images
     └── cv/
-        └── resume.pdf          # Your CV / resume PDF
+        └── Ziad_Wagih_ATS_CV.pdf  # Your ATS-friendly CV PDF
 ```
 
 ---
