@@ -44,7 +44,7 @@ const portfolioData = {
     // EDIT: Path to your about photo (displayed in about section). Leave empty ("") to show clean editorial layout.
     aboutImage: "assets/images/about/ziad-about.jpg",
     // EDIT: Path to your CV/resume PDF file (leave empty "" to hide all CV download buttons)
-    cv: "assets/cv/resume.pdf",
+    cv: "assets/cv/Ziad_Wagih_ATS_CV.pdf",
     // EDIT: Set to true to show "Available for Opportunities" badge
     availability: true,
     // EDIT: Custom availability text
